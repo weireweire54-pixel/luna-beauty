@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LUNA Beauty Studio — премиальный салон красоты в Алматы. Маникюр, педикюр, уход за лицом и SPA в атмосфере роскоши.">
+  <title>LUNA Beauty Studio — Салон красоты премиум-класса, Алматы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">
+        <span class="logo__icon">✦</span>
+        <span class="logo__text">LUNA</span>
+        <span class="logo__sub">Beauty Studio</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#about" class="nav__link">О нас</a></li>
+          <li><a href="#services" class="nav__link">Услуги</a></li>
+          <li><a href="#gallery" class="nav__link">Галерея</a></li>
+          <li><a href="#why-us" class="nav__link">Почему мы</a></li>
+          <li><a href="#reviews" class="nav__link">Отзывы</a></li>
+          <li><a href="#promo" class="nav__link">Акция</a></li>
+          <li><a href="#contacts" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contacts" class="btn btn--primary header__cta">Записаться</a>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img
+        src="images/hero.jpg"
+        alt="Интерьер салона красоты LUNA"
+        class="hero__bg-img"
+      >
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="container hero__content">
+      <div class="hero__badge glass fade-up">Премиальный салон красоты · Алматы</div>
+      <h1 class="hero__title fade-up">Раскройте свою<br><em>естественную красоту</em></h1>
+      <p class="hero__subtitle fade-up">LUNA Beauty Studio — пространство, где забота о вас становится искусством. Индивидуальный подход, лучшие мастера и атмосфера безупречного комфорта.</p>
+      <div class="hero__actions fade-up">
+        <a href="#contacts" class="btn btn--primary btn--lg">Записаться онлайн</a>
+        <a href="#services" class="btn btn--glass btn--lg">Наши услуги</a>
+      </div>
+      <div class="hero__stats glass fade-up">
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="8">0</span>
+          <span class="hero__stat-label">лет опыта</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="12000">0</span>
+          <span class="hero__stat-label">довольных клиентов</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="15">0</span>
+          <span class="hero__stat-label">мастеров</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Прокрутить вниз">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__tag">О нас</span>
+        <h2 class="section__title">Красота — это<br><em>наша философия</em></h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__image-wrap fade-up">
+          <img
+            src="images/about.jpg"
+            alt="Мастер LUNA Beauty Studio за работой"
+            class="about__image"
+          >
+          <div class="about__image-accent"></div>
+        </div>
+
+        <div class="about__content fade-up">
+          <p class="about__lead">LUNA Beauty Studio — это больше, чем салон. Это место в сердце Алматы, где каждая деталь продумана для вашего комфорта и вдохновения.</p>
+          <p class="about__text">Мы объединили лучшие мировые практики ухода за собой с индивидуальным подходом к каждому гостю. Наши мастера регулярно проходят обучение у ведущих экспертов индустрии красоты.</p>
+          <p class="about__text">Мы используем только премиальную косметику и создаём атмосферу, в которой вы можете по-настоящему расслабиться и насладиться процессом преображения.</p>
+
+          <div class="about__features">
+            <div class="about__feature glass">
+              <div class="about__feature-icon">✦</div>
+              <div>
+                <h3 class="about__feature-title">Премиум косметика</h3>
+                <p class="about__feature-text">Только проверенные бренды мирового уровня</p>
+              </div>
+            </div>
+            <div class="about__feature glass">
+              <div class="about__feature-icon">✦</div>
+              <div>
+                <h3 class="about__feature-title">Сертифицированные мастера</h3>
+                <p class="about__feature-text">Опыт и постоянное профессиональное развитие</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__header section__header--center fade-up">
+        <span class="section__tag">Наши услуги</span>
+        <h2 class="section__title">Искусство<br><em>ухода за собой</em></h2>
+        <p class="section__desc">Широкий спектр услуг для вашей красоты и благополучия</p>
+      </div>
+
+      <div class="services__grid">
+        <article class="service-card fade-up">
+          <div class="service-card__image-wrap">
+            <img src="images/service-manicure.jpg" alt="Маникюр" class="service-card__image">
+            <div class="service-card__overlay"></div>
+          </div>
+          <div class="service-card__body glass">
+            <h3 class="service-card__title">Маникюр</h3>
+            <p class="service-card__desc">Классический, аппаратный и SPA-маникюр. Идеальный уход за руками и безупречный результат.</p>
+            <div class="service-card__footer">
+              <span class="service-card__price">от 8 000 ₸</span>
+              <a href="#contacts" class="service-card__link">Записаться →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card fade-up">
+          <div class="service-card__image-wrap">
+            <img src="images/service-pedicure.jpg" alt="Педикюр" class="service-card__image">
+            <div class="service-card__overlay"></div>
+          </div>
+          <div class="service-card__body glass">
+            <h3 class="service-card__title">Педикюр</h3>
+            <p class="service-card__desc">Классический и SPA-педикюр. Комфортный уход за стопами в расслабляющей атмосфере.</p>
+            <div class="service-card__footer">
+              <span class="service-card__price">от 12 000 ₸</span>
+              <a href="#contacts" class="service-card__link">Записаться →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card fade-up">
+          <div class="service-card__image-wrap">
+            <img src="images/service-face.jpg" alt="Уход за лицом" class="service-card__image">
+            <div class="service-card__overlay"></div>
+          </div>
+          <div class="service-card__body glass">
+            <h3 class="service-card__title">Уход за лицом</h3>
+            <p class="service-card__desc">Чистка, пилинг, anti-age процедуры и индивидуальные программы ухода.</p>
+            <div class="service-card__footer">
+              <span class="service-card__price">от 18 000 ₸</span>
+              <a href="#contacts" class="service-card__link">Записаться →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card fade-up">
+          <div class="service-card__image-wrap">
+            <img src="images/service-spa.jpg" alt="SPA процедуры" class="service-card__image">
+            <div class="service-card__overlay"></div>
+          </div>
+          <div class="service-card__body glass">
+            <h3 class="service-card__title">SPA</h3>
+            <p class="service-card__desc">Массаж, обёртывания и комплексные SPA-программы для полного расслабления.</p>
+            <div class="service-card__footer">
+              <span class="service-card__price">от 25 000 ₸</span>
+              <a href="#contacts" class="service-card__link">Записаться →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card fade-up">
+          <div class="service-card__image-wrap">
+            <img src="images/service-brows.jpg" alt="Брови и ресницы" class="service-card__image">
+            <div class="service-card__overlay"></div>
+          </div>
+          <div class="service-card__body glass">
+            <h3 class="service-card__title">Брови</h3>
+            <p class="service-card__desc">Архитектура бровей, ламинирование, окрашивание и коррекция формы.</p>
+            <div class="service-card__footer">
+              <span class="service-card__price">от 7 000 ₸</span>
+              <a href="#contacts" class="service-card__link">Записаться →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card fade-up">
+          <div class="service-card__image-wrap">
+            <img src="images/service-makeup.jpg" alt="Макияж" class="service-card__image">
+            <div class="service-card__overlay"></div>
+          </div>
+          <div class="service-card__body glass">
+            <h3 class="service-card__title">Макияж</h3>
+            <p class="service-card__desc">Дневной, вечерний и свадебный макияж от профессиональных визажистов.</p>
+            <div class="service-card__footer">
+              <span class="service-card__price">от 15 000 ₸</span>
+              <a href="#contacts" class="service-card__link">Записаться →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section__header section__header--center fade-up">
+        <span class="section__tag">Галерея</span>
+        <h2 class="section__title">Моменты<br><em>красоты</em></h2>
+        <p class="section__desc">Загляните в наш салон и почувствуйте атмосферу LUNA</p>
+      </div>
+
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--wide fade-up">
+          <img src="images/gallery-interior.jpg" alt="Интерьер салона">
+          <div class="gallery__overlay">
+            <span class="gallery__caption">Интерьер салона</span>
+          </div>
+        </div>
+        <div class="gallery__item fade-up">
+          <img src="images/gallery-manicure.jpg" alt="Маникюрный зал">
+          <div class="gallery__overlay">
+            <span class="gallery__caption">Маникюрный зал</span>
+          </div>
+        </div>
+        <div class="gallery__item fade-up">
+          <img src="images/gallery-hair.jpg" alt="Уход за волосами">
+          <div class="gallery__overlay">
+            <span class="gallery__caption">Уход за волосами</span>
+          </div>
+        </div>
+        <div class="gallery__item fade-up">
+          <img src="images/gallery-spa.jpg" alt="SPA зона">
+          <div class="gallery__overlay">
+            <span class="gallery__caption">SPA зона</span>
+          </div>
+        </div>
+        <div class="gallery__item gallery__item--tall fade-up">
+          <img src="images/gallery-cosmetics.jpg" alt="Косметика">
+          <div class="gallery__overlay">
+            <span class="gallery__caption">Премиум косметика</span>
+          </div>
+        </div>
+        <div class="gallery__item fade-up">
+          <img src="images/gallery-makeup.jpg" alt="Макияж">
+          <div class="gallery__overlay">
+            <span class="gallery__caption">Зона макияжа</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="section why-us" id="why-us">
+    <div class="container">
+      <div class="section__header section__header--center fade-up">
+        <span class="section__tag">Почему выбирают нас</span>
+        <h2 class="section__title">Стандарты<br><em>безупречности</em></h2>
+      </div>
+
+      <div class="why-us__grid">
+        <div class="why-card glass fade-up">
+          <div class="why-card__number">01</div>
+          <div class="why-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3 class="why-card__title">Премиум качество</h3>
+          <p class="why-card__text">Работаем только с профессиональной косметикой и оборудованием ведущих мировых брендов.</p>
+        </div>
+
+        <div class="why-card glass fade-up">
+          <div class="why-card__number">02</div>
+          <div class="why-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3 class="why-card__title">Индивидуальный подход</h3>
+          <p class="why-card__text">Каждая процедура подбирается с учётом ваших особенностей, пожеланий и типа кожи.</p>
+        </div>
+
+        <div class="why-card glass fade-up">
+          <div class="why-card__number">03</div>
+          <div class="why-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3 class="why-card__title">Удобное время</h3>
+          <p class="why-card__text">Работаем ежедневно с 9:00 до 21:00. Онлайн-запись доступна 24/7 без ожидания.</p>
+        </div>
+
+        <div class="why-card glass fade-up">
+          <div class="why-card__number">04</div>
+          <div class="why-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="why-card__title">Стерильность & безопасность</h3>
+          <p class="why-card__text">Строгое соблюдение санитарных норм. Одноразовые расходные материалы и автоклавная обработка.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <div class="section__header section__header--center fade-up">
+        <span class="section__tag">Отзывы</span>
+        <h2 class="section__title">Что говорят<br><em>наши клиенты</em></h2>
+      </div>
+
+      <div class="reviews__slider-wrap fade-up">
+        <div class="reviews__slider" id="reviewsSlider">
+          <article class="review-card glass">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«Потрясающий салон! Атмосфера роскоши с первых секунд. Мастер по маникюру — настоящий профессионал. Буду возвращаться снова и снова.»</p>
+            <div class="review-card__author">
+              <img src="images/avatar-1.jpg" alt="Анна" class="review-card__avatar">
+              <div>
+                <span class="review-card__name">Анна М.</span>
+                <span class="review-card__service">Маникюр</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card glass">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«Делала свадебный макияж — результат превзошёл все ожидания! Держался весь день, выглядело естественно и невероятно красиво. Спасибо, LUNA!»</p>
+            <div class="review-card__author">
+              <img src="images/avatar-2.jpg" alt="Елена" class="review-card__avatar">
+              <div>
+                <span class="review-card__name">Елена К.</span>
+                <span class="review-card__service">Свадебный макияж</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card glass">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«Лучший салон в Алматы. Хожу на уход за лицом уже полгода — кожа преобразилась. Персонал внимательный, всегда предложат чай и создадут уют.»</p>
+            <div class="review-card__author">
+              <img src="images/avatar-3.jpg" alt="Мария" class="review-card__avatar">
+              <div>
+                <span class="review-card__name">Мария С.</span>
+                <span class="review-card__service">Уход за лицом</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card glass">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">«SPA-программа — просто магия! Полное расслабление и забота о каждой детали. Очень довольна сервисом и атмосферой салона!»</p>
+            <div class="review-card__author">
+              <img src="images/avatar-4.jpg" alt="Ольга" class="review-card__avatar">
+              <div>
+                <span class="review-card__name">Ольга В.</span>
+                <span class="review-card__service">SPA</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="reviews__controls">
+          <button class="reviews__btn" id="reviewPrev" aria-label="Предыдущий отзыв">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="reviews__dots" id="reviewDots"></div>
+          <button class="reviews__btn" id="reviewNext" aria-label="Следующий отзыв">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo -->
+  <section class="section promo" id="promo">
+    <div class="promo__bg">
+      <img src="images/promo.jpg" alt="" class="promo__bg-img" aria-hidden="true">
+      <div class="promo__overlay"></div>
+    </div>
+    <div class="container promo__inner fade-up">
+      <div class="promo__content glass">
+        <span class="promo__label">Специальное предложение</span>
+        <h2 class="promo__title">Скидка 20%<br>на первое посещение</h2>
+        <p class="promo__text">Запишитесь онлайн и получите скидку 20% на любую процедуру при первом визите в LUNA Beauty Studio.</p>
+        <div class="promo__timer" id="promoTimer">
+          <div class="promo__timer-item">
+            <span class="promo__timer-num" id="timerDays">00</span>
+            <span class="promo__timer-label">дней</span>
+          </div>
+          <span class="promo__timer-sep">:</span>
+          <div class="promo__timer-item">
+            <span class="promo__timer-num" id="timerHours">00</span>
+            <span class="promo__timer-label">часов</span>
+          </div>
+          <span class="promo__timer-sep">:</span>
+          <div class="promo__timer-item">
+            <span class="promo__timer-num" id="timerMinutes">00</span>
+            <span class="promo__timer-label">минут</span>
+          </div>
+          <span class="promo__timer-sep">:</span>
+          <div class="promo__timer-item">
+            <span class="promo__timer-num" id="timerSeconds">00</span>
+            <span class="promo__timer-label">секунд</span>
+          </div>
+        </div>
+        <a href="#contacts" class="btn btn--primary btn--lg">Воспользоваться акцией</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section class="section contacts" id="contacts">
+    <div class="container">
+      <div class="section__header section__header--center fade-up">
+        <span class="section__tag">Контакты</span>
+        <h2 class="section__title">Ждём вас<br><em>в гости</em></h2>
+      </div>
+
+      <div class="contacts__grid">
+        <div class="contacts__info fade-up">
+          <div class="contact-item glass">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <h3 class="contact-item__title">LUNA Beauty Studio</h3>
+              <p class="contact-item__text">г. Алматы</p>
+            </div>
+          </div>
+
+          <div class="contact-item glass">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <h3 class="contact-item__title">Режим работы</h3>
+              <p class="contact-item__text">Пн — Вс: 9:00 — 21:00<br>Без выходных</p>
+            </div>
+          </div>
+
+          <div class="contact-item glass">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <h3 class="contact-item__title">Онлайн-запись</h3>
+              <p class="contact-item__text">Оставьте заявку через форму —<br>мы свяжемся с вами в ближайшее время</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form glass fade-up" id="contactForm">
+          <h3 class="contact-form__title">Записаться онлайн</h3>
+          <p class="contact-form__subtitle">Оставьте заявку — мы свяжемся с вами в течение 15 минут</p>
+
+          <div class="form-group">
+            <label for="name" class="form-label">Ваше имя</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Анна" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="form-label">Телефон</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+7 (___) ___-__-__" required>
+          </div>
+
+          <div class="form-group">
+            <label for="service" class="form-label">Услуга</label>
+            <select id="service" name="service" class="form-input form-select">
+              <option value="">Выберите услугу</option>
+              <option value="manicure">Маникюр</option>
+              <option value="pedicure">Педикюр</option>
+              <option value="face">Уход за лицом</option>
+              <option value="spa">SPA</option>
+              <option value="brows">Брови</option>
+              <option value="makeup">Макияж</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Комментарий</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Удобное время, пожелания..." rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+
+          <p class="contact-form__note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="logo logo--footer">
+          <span class="logo__icon">✦</span>
+          <span class="logo__text">LUNA</span>
+          <span class="logo__sub">Beauty Studio</span>
+        </a>
+        <p class="footer__desc">Премиальный салон красоты в Алматы, где забота о вас — искусство.</p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__nav">
+        <h4 class="footer__heading">Навигация</h4>
+        <ul class="footer__links">
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#gallery">Галерея</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__nav">
+        <h4 class="footer__heading">Услуги</h4>
+        <ul class="footer__links">
+          <li><a href="#services">Маникюр</a></li>
+          <li><a href="#services">Педикюр</a></li>
+          <li><a href="#services">Уход за лицом</a></li>
+          <li><a href="#services">SPA</a></li>
+          <li><a href="#services">Брови</a></li>
+          <li><a href="#services">Макияж</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <h4 class="footer__heading">Контакты</h4>
+        <p class="footer__contact-text">LUNA Beauty Studio</p>
+        <p class="footer__contact-text">г. Алматы</p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy">&copy; 2026 LUNA Beauty Studio, Алматы. Все права защищены.</p>
+        <div class="footer__legal">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <span class="toast__icon">✓</span>
+    <span class="toast__message" id="toastMessage"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
