@@ -274,7 +274,7 @@ form.addEventListener('submit', (e) => {
     return;
   }
 
-  const whatsappNumber = '77478043342'; // Замени на свой номер
+  const whatsappNumber = '77776557878'; // Замени на свой номер
   const text = [
     'Здравствуйте! Новая заявка с сайта LUNA Beauty.',
     `Имя: ${name}`,
