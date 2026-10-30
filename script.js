@@ -260,17 +260,35 @@ function initContactForm() {
     });
   }
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
+  
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
 
-    const name = form.name.value.trim();
-    const phone = form.phone.value.trim();
+  const name = form.elements.name.value.trim();
+  const phone = form.elements.phone.value.trim();
+  const service = form.elements.service?.value || 'Не выбрана';
+  const message = form.elements.message?.value.trim() || 'Нет';
 
-    if (!name || !phone) return;
+  if (!name || !phone) {
+    showToast('Пожалуйста, укажите имя и телефон.');
+    return;
+  }
 
-    showToast(`Спасибо, ${name}! Мы свяжемся с вами в ближайшее время.`);
-    form.reset();
-  });
+  const whatsappNumber = '77478043342'; // Замени на свой номер
+  const text = [
+    'Здравствуйте! Новая заявка с сайта LUNA Beauty.',
+    `Имя: ${name}`,
+    `Телефон клиента: ${phone}`,
+    `Услуга: ${service}`,
+    `Комментарий: ${message}`
+  ].join('\n');
+
+  const whatsappUrl =
+    `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+  window.open(whatsappUrl, '_blank');
+});
+
 }
 
 function showToast(message) {
