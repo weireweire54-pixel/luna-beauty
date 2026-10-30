@@ -266,7 +266,7 @@ form.addEventListener('submit', (e) => {
 
   const name = form.elements.name.value.trim();
   const phone = form.elements.phone.value.trim();
-  const service = form.elements.service?.value || 'Не выбрана';
+  const service = form.elements.service?.selectedOptions[0]?.textContent || 'Не выбрана';
   const message = form.elements.message?.value.trim() || 'Нет';
 
   if (!name || !phone) {
